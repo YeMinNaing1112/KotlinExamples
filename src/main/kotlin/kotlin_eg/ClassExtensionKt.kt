@@ -1,8 +1,9 @@
 package kotlin_eg
-class  Developer(val name:String){
-companion object{
-    val address="Yangon"
-}
+
+class Developer(val name: String) {
+    companion object {
+        val address = "Yangon"
+    }
 }
 
 fun main() {
@@ -23,13 +24,13 @@ fun String.isPalindrome(): Boolean {
 
 }
 
-fun Developer.getFirstName():String{
-    return  name.split(" ").first ()
+fun Developer.getFirstName(): String {
+    return name.split(" ").first()
 }
 
-val Developer.defaultPosition:String
-get()="Mobile Developer"
+val Developer.defaultPosition: String
+    get() = "Mobile Developer"
 
-fun Developer.Companion.getAddress():String{
+fun Developer.Companion.getAddress(): String {
     return "I'm from $address"
 }
